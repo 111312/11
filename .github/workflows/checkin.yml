@@ -1,8 +1,11 @@
 name: checkin
 on:
   schedule:
-    - cron: "33 06 * * *"
+    - cron: "00 12 * * *"
   workflow_dispatch:
+
+env:
+  TZ: Asia/Shanghai
   
 jobs:
   sync_with_upstream:
