@@ -2,7 +2,8 @@ name: checkin
 on:
   schedule:
     - cron: "33 06 * * *"
-
+  workflow_dispatch:
+  
 jobs:
   sync_with_upstream:
     runs-on: ubuntu-latest
